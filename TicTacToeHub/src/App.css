@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+  margin: 30px auto;
+  max-width: 300px;
+}
+
+.square {
+  background-color: #fff;
+  border: 1px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.square:disabled {
+  cursor: not-allowed;
+  background-color: #ddd;
+}
